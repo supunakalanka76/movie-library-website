@@ -44,7 +44,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
     
     try {
-        const response = await fetch('php/form_handler.php', {
+        const response = await fetch('/php/form-handler.php', {
             method: 'POST',
             body: formData
         });
