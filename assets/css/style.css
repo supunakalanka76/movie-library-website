@@ -296,6 +296,7 @@ nav ul li a:hover {
     border-radius: 4px;
     font-size: 16px;
     background-color: #333;
+    color: white;
 }
 
 .form-group textarea {

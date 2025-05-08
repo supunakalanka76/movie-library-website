@@ -28,7 +28,7 @@ if (!empty($errors)) {
 }
 
 // Save to JSON file
-$file = 'data.json';
+$file = './data.json';
 $currentData = [];
 if (file_exists($file)) {
     $currentData = json_decode(file_get_contents($file), true);
@@ -40,7 +40,7 @@ $currentData[] = $formData;
 file_put_contents($file, json_encode($currentData, JSON_PRETTY_PRINT));
 
 // Send emails
-require 'email-sender.php';
+require './email-sender.php';
 
 echo json_encode(['success' => true]);
 ?>
