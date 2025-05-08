@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><span class="logo-icon">&#9728;</span> Logoipsum</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#">OUR SCRIERS</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#favorites">MOVIE LIBRARY</a></li>
+                <li><a href="#">LOGOTION & CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+        </section>
+
+        <section class="intro">
+            <h1>MOVIE LIBRARY</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </section>
+
+        <section class="favorites">
+            <div class="search-container">
+                <h2>Collect your favourites</h2>
+                <div class="search">
+                    <input type="text" id="movie-search" placeholder="Search title and add to grid">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="movie-grid">
+                <!-- Static items -->
+                <div class="movie-item">
+                    <img src="assets/images/batman.jpg" alt="Batman Returns">
+                    <div class="movie-item-content">
+                        <h3>Batman Returns</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="assets/images/wild-west.jpg" alt="Wild Wild West">
+                    <div class="movie-item-content">
+                        <h3>Wild Wild West</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <img src="assets/images/spider-man.jpg" alt="The Amazing Spider man">
+                    <div class="movie-item-content">
+                        <h3>Spider Man</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <!-- API items will be added here dynamically -->
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>How to reach us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <div class="contact-container">
+                <div class="form-container">
+                    <form id="contact-form" method="POST" action="php/form-handler.php">
+                        <div class="form-group">
+                            <label for="first-name">First Name*</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Telephone</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        * Required fields
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the Terms & Conditions</label>
+                        </div>
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-address">
+                <p>IT Group</p>
+                <p>C. Salvador de Madariaga, 1</p>
+                <p>28027 Madrid</p>
+                <p>Spain</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Follow Us On</h3>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="line1"></div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 IT Hote Is. All rights reserved.</p>
+            <p class="photo-credits">Photos by Felix Mooreeram & Serge.Kutuzux on Ungulash</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/api-handler.js"></script>
+    <script src="/assets/js/form-validation.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGEZ1MAycbb4nnNifLzrxw2zxcULUSdJg&callback=initMap">
+    </script>
+</body>
+</html>
