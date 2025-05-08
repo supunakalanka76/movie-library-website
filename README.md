@@ -26,4 +26,4 @@ A responsive movie library website with API integration, form validation, and em
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/movie-library.git
+   git clone https://github.com/supunakalanka76/movie-library-website.git
