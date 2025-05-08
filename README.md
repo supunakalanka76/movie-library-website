@@ -1,29 +1,57 @@
-# Movie Library Web Application
+# Movie Library Project
 
-A responsive movie library website with API integration, form validation, and email notifications.
+## Project Overview
+A responsive movie library website with API integration, form validation, and data persistence using PHP's built-in server.
 
 ## Features
-
-- **Responsive Design**: Works on mobile, tablet, and desktop
-- **Movie Search**: Integration with TVMaze API
-- **Form Handling**: With client-side and server-side validation
-- **Email Notifications**: Auto-response to users and admin alerts
-- **Interactive UI**: Hamburger menu, movie grid, and contact form
+- Responsive design (mobile, tablet, desktop)
+- Movie search via TVMaze API
+- Form validation (client-side and server-side)
+- Data storage in JSON format
+- Interactive UI components
 
 ## Technologies Used
+- HTML5, CSS3, JavaScript
+- PHP (Built-in server)
+- TVMaze API
 
-- **Frontend**:
-  - HTML5, CSS3, JavaScript
-  - Font Awesome for icons
-  - Responsive design with Flexbox/Grid
+## Installation & Setup
 
-- **Backend**:
-  - PHP for form processing
-  - JSON data storage
-  - Email functionality
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/yourusername/movie-library.git
+cd movie-library
+```
 
-## Installation
+### Step 2: Project Structure
+Ensure your project has this structure:
+```
+movie-library-website/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── form-validation.js
+│   │   └── api-handler.js
+│   ├── images/
+│   └── videos/
+├── php/
+│   ├── form-handler.php
+│   ├── email-sender.php
+│   └── data.json
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/supunakalanka76/movie-library-website.git
+### Step 3: Start PHP Built-in Server
+```bash
+php -S localhost:8000
+```
+
+### Step 4: Access the Application
+Open your browser and visit:
+```bash
+http://localhost:8000
+```
+
